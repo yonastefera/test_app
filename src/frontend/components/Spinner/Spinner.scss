@@ -1,0 +1,43 @@
+.loader-wrapper {
+  position: fixed;
+  z-index: 1040;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  opacity: 0;
+  background: rgba(#2a344d, 0.75);
+  transition: opacity 0.3s;
+  display: flex;
+  .loader {
+    margin: auto;
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    &::after {
+      content: " ";
+      display: block;
+      width: 64px;
+      height: 64px;
+      margin: 8px;
+      border-radius: 50%;
+      border: 6px solid #fff;
+      border-color: #fff transparent #fff transparent;
+      animation: lds-dual-ring 1.2s linear infinite;
+    }
+  }
+  &.active {
+    opacity: 1;
+    pointer-events: all;
+  }
+}
+
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

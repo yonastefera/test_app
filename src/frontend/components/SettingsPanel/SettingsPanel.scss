@@ -1,0 +1,18 @@
+.settings-panel-wrapper {
+  font-family: 'PT Serif', serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-color: #dde2e3;
+  .settings-panel {
+    max-width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .settings-panel__label {
+      margin-right: 10px;
+      color: #72747a;
+    }
+  }
+}

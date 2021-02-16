@@ -1,0 +1,41 @@
+.offer {
+  width: 200px;
+  min-height: 200px;
+  background-color: white;
+  border-radius: 5px;
+  margin: 10px;
+  font-family: 'PT Serif', serif;
+  color: #72747a;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+  border: solid 1px #dde2e3;
+  &:hover {
+    transform: scale(1.1);
+  }
+  .offer-image {
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+  .offer-name {
+    font-size: 18px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+  }
+
+  .offer-cashback {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-size: 28px;
+    margin: 10px;
+    flex-grow: 1;
+  }
+}
